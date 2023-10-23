@@ -8,7 +8,7 @@ function ListPokemons() {
 
   useEffect(() => {
     async function getPokemon() {
-      const respons = await fetch("https://pokeapi.deno.dev/pokemon?limit=1000");
+      const respons = await fetch("https://pokeapi.deno.dev/pokemon?limit=100");
       const data = await respons.json();
       setPokemons(data);
       setFilterPokemons(data);
